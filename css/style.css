@@ -1,0 +1,232 @@
+/* ========================================
+   GENERAL STYLES
+   ======================================== */
+
+/* Universal Selector - Alternative Box Model */
+* {
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    margin: 0;
+ }
+.wrapper{
+    margin: auto;
+    width: 80%;
+}
+
+/* Import Font Face */
+@font-face {
+  font-family: New Caledonia; 
+  src: url(/fonts/NewCaledoniaLTStdRg.TTF); 
+}
+@font-face {
+  font-family: Volkswagen; 
+  src: url(/fonts/Volkswagen-Medium.otf); 
+}
+
+/* Heading 1 - Main Title */
+h1 {
+    font-family: Volkswagen, Arial, sans-serif;
+    font-size: 6vw;
+    text-align: center;
+    text-shadow: 2px 2px #feb9dc;
+    color: #fef7a3;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: black;
+    margin: 0;
+    padding: 1vw;
+}
+
+/* Heading 2 */
+h2 {
+    font-family: Volkswagen, Arial, sans-serif;
+    font-size: 3.5vw;
+    line-height: 0;
+    color: #333;
+}
+
+/* Heading 3 */
+h3 {
+    font-family: Volkswagen, Arial, sans-serif;
+    font-size: 3vw;
+    color: #333;
+}
+
+p{
+    font-family: New Caledonia,"Times New Roman", serif;
+    line-height: 2;
+}
+
+/* Import Font Face */
+@font-face {
+    font-family: "New Caledonia";
+    src: url(/fonts/NewCaledoniaLTStdRg.TTF);
+}
+
+@font-face {
+    font-family: Volkswagen;
+    src: url(/fonts/Volkswagen-Medium.otf);
+}
+
+/* ========================================
+   WRAPPER STYLES
+   ======================================== */
+
+/* Main Content Wrapper - Centers page and limits width */
+.wrapper {
+    margin: 0 auto;
+    width: 85%;
+}
+
+/* ========================================
+   HEADER & NAVIGATION STYLES
+   ======================================== */
+
+/* Header Container */
+header {
+    background-color: #fff;
+}
+
+/* Navigation List */
+ul {
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    border-color: black;
+    border-width: 2px;
+    margin-block-start: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: #fef7a3;
+}
+
+/* Navigation List Items */
+li {
+    padding: .5vw;
+    width: 33.33%;
+    display: grid;
+    text-align: center;
+}
+
+/* ========================================
+   LINK STYLES
+   ======================================== */
+
+/* Navigation Links */
+li a {
+    font-family: Volkswagen, Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px #feb9dc;
+    font-size: 2.5vmax;
+    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-color: black;
+}
+li{
+   
+    padding: 1vw;
+}
+
+li a{
+   font-family: Volkswagen, Arial, sans-serif;
+   text-decoration:none;
+   color: white;
+   font-weight: 800;
+}
+li a:hover{
+    text-shadow: 2px 2px black;
+    color:white;
+    -webkit-text-stroke-color: black; 
+    -webkit-text-stroke-width: .2px;
+
+}
+
+.fluttershy-img-description p {
+    font-size: 1.7vw;
+}
+
+.fluttershy-img img{
+    margin: auto;
+    display: block;
+    border: 3px solid #feb9dc;
+    box-shadow: 2px 2px #fef7a3;
+    width: 15vw;
+    height: auto;
+    border-radius: 2vw;
+}
+.img-flex{
+    display: flex;
+    gap: 2vw;
+    justify-content: center;
+}
+/* ========================================
+   SECTION & MAIN STYLES
+   ======================================== */
+.flex-content{
+    display: flex;
+    flex-direction: row;
+   width: 100%;
+}
+.history-content p, .skills-content p{
+    font-size: 1.4vw;
+    padding:1.3vw;
+}
+.page-divider{
+        border-bottom: 1px solid #f0f0f0;
+  
+}
+#personality{
+    text-align: center;
+}
+.personality-flex {
+    display: flex;
+    font-size: 1.6vw;;
+}
+.personality-content{
+    padding:2vw;
+}
+/* responsive screen sizing */
+@media screen and (max-width: 900px) {
+    .personality-flex{
+        font-size:1.9vw;
+    }
+.flex-content{
+    display:block;
+}
+.history-content p, .skills-content p{
+    font-size: 2vw;
+
+}
+}  
+
+/* Last Section - Remove Border */
+section:last-child {
+    border-bottom: none;
+}
+
+/* ========================================
+   FOOTER STYLES
+   ======================================== */
+
+/* Footer */
+footer {
+    background-color: #fef7a3;
+    color: #ffffff;
+    padding: 1rem;
+    border-top: 2px solid #000000;
+    text-align: center;
+}
+footer a {
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-text-stroke-color: #000000;
+    -webkit-text-stroke-width: thin;
+    text-shadow: 2px 2px #feb9dc;
+    font-weight: bold;
+    font-size: 1.4vw;
+}
