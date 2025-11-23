@@ -11,7 +11,7 @@ p{
     background-color: #ffdfe6;
     padding: 1vw;
         -webkit-text-stroke: #000000 0.05vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     line-height: 1.5;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 800;
@@ -19,15 +19,28 @@ p{
     text-shadow: .1vw .1vw #000000;
 }
 h1{
+    background-color: #d3ffc5;
     margin-block-start: 0;
     margin-block-end: 0;
     padding: 1vw;
- font-size: 4vw;
+ font-size: 2vw;
     line-height: 1;
     font-family: 'Times New Roman', Times, serif;
     -webkit-text-stroke: #000000 0.1vw;
     font-weight: 800;
     color: #FFC5D3;
+    text-shadow: .1vw .1vw #000000;   
+}
+h2{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 1vw;
+ font-size: 1.9vw;
+    line-height: 1;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-text-stroke: #000000 0.1vw;
+    font-weight: 800;
+    color: #ffaac3;
     text-shadow: .1vw .1vw #000000;   
 }
 a{
@@ -40,14 +53,59 @@ a{
     color: #c5d3ff;
     font-weight: bold;
     text-decoration: none;
-    font-size: 1.9vw
+    font-size: 1.4vw
 }
 a:hover{
     background-color: #c5d3ff;
     color: #ffd4c5;
 }
 img{
-    margin: auto;
-    display: block;
     width: 100%;
+    display: block;
+}
+#pikachu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+header{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+gap: 2vw;
+}
+#search button{
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    background-color: #bebee9;
+    color: #e9bebe;
+     -webkit-text-stroke: #000000 0.05vw;
+         text-shadow: .1vw .1vw #000000;  
+         border: .2vw solid #000000;
+    font-weight: bold;
+    font-size: 1.8vw;
+    padding: .2vw .4vw;
+}
+#search button:hover{
+    background-color: #8efefe;
+    color: #fe8e8e;
+    cursor: pointer;
+}
+#search input{
+    padding: .2vw .4vw;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8vw;
+    border: .2vw solid #000000;
+    background-color: #ffdfe6;
+    color: #ffffff;
+    caret-color: #000000;
+     -webkit-text-stroke: #000000 0.05vw;
+         text-shadow: .1vw .1vw #000000;  
+}
+input:is([type="button"], [type="submit"], [type="reset"]), input[type="file"]::file-selector-button, button {
+    padding-inline-start: 0;
+    padding-block-start: 0;
+    padding-block-end: 0;
 }
