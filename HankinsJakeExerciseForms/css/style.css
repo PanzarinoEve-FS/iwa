@@ -31,9 +31,9 @@ h1 {
     font-family: Volkswagen, Arial, sans-serif;
     font-size: 6vw;
     text-align: center;
-    text-shadow: 2px 2px #feb9dc;
+    text-shadow: .2vw .2vw #feb9dc;
     color: #fef7a3;
-    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-width: 0.15vw;
     -webkit-text-stroke-color: black;
     margin: 0;
     padding: 1vw;
@@ -76,7 +76,7 @@ p{
 
 /* Main Content Wrapper - Centers page and limits width */
 .wrapper {
-    margin: 0 auto;
+    margin: 3vw auto;
     width: 85%;
 }
 
@@ -95,7 +95,7 @@ ul {
     border-left: none;
     border-right: none;
     border-color: black;
-    border-width: 2px;
+    border-width: .3vw;
     margin-block-start: 0;
     list-style-type: none;
     display: flex;
@@ -124,7 +124,7 @@ li a {
     color: white;
     text-shadow: 2px 2px #feb9dc;
     font-size: 2.5vmax;
-    -webkit-text-stroke-width: .2px;
+    -webkit-text-stroke-width: .75px;
     -webkit-text-stroke-color: black;
 }
 li{
@@ -229,4 +229,69 @@ footer a {
     text-shadow: 2px 2px #feb9dc;
     font-weight: bold;
     font-size: 1.4vw;
+}
+/* ========================================
+   Form Styles
+   ======================================== */
+
+/* Form */
+.contact-form form{
+    margin-bottom: 3vw;
+}
+.contact-form label, .contact-form input, .contact-form textarea, .contact-form button{
+    display: block;
+    width: 66.666%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: .75vw;;
+    font-family: New Caledonia, "Times New Roman", serif;
+    font-size: 2.5vw;
+}
+.contact-form .checkbox{
+    text-align: center;
+    line-height: .3;
+}
+.contact-form .checkbox label{
+  width: auto;
+  font-size: 1.75vw;
+  display: inline-block;
+    
+}
+.contact-form .checkbox input{
+    display: inline-block;
+ width: 1.75vw;
+ height:1.75vw;
+}
+.contact-form input,  .contact-form textarea{
+border-width: .3vw;
+border-color: black;
+background-color: rgb(254, 247, 163);
+    -webkit-text-stroke-width: .05vw;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: .2vw .2vw #feb9dc;
+color: #FFFFFF;
+  caret-color: #000000;
+}
+.contact-form h2{
+    text-align: center;
+}
+.contact-form button{
+    background-color: #feb9dc;
+    border:solid .3vw #000000;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: .075vw;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: .2vw .2vw rgb(254, 247, 163);
+}
+.contact-form button:hover{
+    background-color: #86e7eb;
+    border:solid .3vw #000000;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: .075vw;
+    -webkit-text-stroke-color: #000000;
+    text-shadow: .2vw .2vw #feb9dc;
 }
